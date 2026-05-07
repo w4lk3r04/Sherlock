@@ -18,7 +18,7 @@
         },
         participant_roles: {
           green: "green_agent",
-          agent: "participant_agent",   // ← purple agent
+          purple1: "participant_agent",
         },
       },
     },
@@ -34,9 +34,8 @@
     },
   },
   bindings: [
-    { to: "#gateway.green",        from: "#green_agent.a2a" },
-    { to: "#gateway.agent",        from: "#participant_agent.a2a" },
-    { to: "#green_agent.proxy",    from: "#participant_agent.a2a" }, 
+    { to: "#gateway.green", from: "#green_agent.a2a" },
+    { to: "#gateway.purple1", from: "#participant_agent.a2a" },
   ],
   exports: {
     results: "#gateway.results",
