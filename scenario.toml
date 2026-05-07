@@ -1,5 +1,6 @@
 [green_agent]
 agentbeats_id = "019e03f3-04eb-71a0-abaf-5853afdc1418"
+image = "ghcr.io/w4lk3r04/sherlock-green:latest"
 env = {}
 
 [[participants]]
