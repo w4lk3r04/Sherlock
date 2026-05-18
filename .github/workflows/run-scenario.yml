@@ -5,6 +5,12 @@ on:
     branches: ['**']
     paths:
       - 'scenario.toml'
+  workflow_dispatch:
+    inputs:
+      skip_pull_request_check:
+        description: 'Skip fork/main branch checks'
+        required: false
+        type: boolean
 
 jobs:
   run:
