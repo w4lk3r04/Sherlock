@@ -1,16 +1,13 @@
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
-
-[[participants]]
-agentbeats_id = ""
-name = "role_1_name"
+agentbeats_id = "019e03f3-04eb-71a0-abaf-5853afdc1418"
+image = "ghcr.io/w4lk3r04/sherlock-green:latest"
 env = {}
 
 [[participants]]
 agentbeats_id = ""
-name = "role_2_name"
-env = {}
+name = "agent"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [config]
-# Add your assessment config here
+task = "arvo:47101"
+level = "level1"
